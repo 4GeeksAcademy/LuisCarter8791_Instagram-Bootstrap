@@ -3,20 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 <body>
-    <div class="header d-flex justify-content-between">
-        <div class="header-l d-flex">
-            <i class="fa-brands fa-instagram"></i>
-            <h5>Instagram</h5>
+    <div class="container-lg mx-auto">
+        <!-- BANNER -->
+        <div class="banner bg-light p-3">
+            <div class="header d-flex justify-content-between">
+                <div class="header-l d-flex">
+                    <i class="fa-brands fa-instagram fa-3x"></i>
+                    <h5 class="pt-1 m-2">Instagram</h5>
+                </div>
+                <div class="header-r d-flex">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-success me-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Create New Post
+                      </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="exampleModalLabel">Create New Post</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h5>Caption:</h5>
+                                <form action="">
+                                <textarea id="w3review" name="w3review" rows="4" cols="50" placeholder="Add the caption of your post here"></textarea>
+                                </form>
+                                <div class="cam-loc-btn">
+                                    <button type="button" class="btn btn-light">
+                                        <i class="fa-solid fa-camera fa-sm"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-light">
+                                        <i class="fa-solid fa-location-dot fa-sm"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Publish</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <!-- DROPDOWN -->
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-gear fa-3x"></i>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Accessibility</a></li>
+                            <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                            <li><a class="dropdown-item" href="#"><hr></a></li>
+                            <li><a class="dropdown-item" href="#">Log Out</a></li>
+                        </ul>      
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="header-r d-flex">
-            <i class="fa-regular fa-gear"></i>
-            <i class="fa-duotone fa-caret-down"></i>
+
+        <div class="container d-flex justify-content-center align-items-center mt-3">
+            <i class="fa-solid fa-table-cells"></i>
+            <i class="fa-solid fa-square"></i>
         </div>
+
     </div>
+
+
 </body>
 </html>
