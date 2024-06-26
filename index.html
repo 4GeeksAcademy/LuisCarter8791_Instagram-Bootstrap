@@ -79,23 +79,27 @@
             </div>
         </div>
     </nav>
-    <!-- MAIN -->
+    <!-- LAYOUT BUTTONS -->
+
+    
+
     <div class="container-lg mx-auto">
         <div class="container d-flex justify-content-center align-items-center mt-3">
             <!-- LAYOUT BUTTONS -->
-            <ul class="nav nav-tabs">
-                <li class="nav-item">
-                    <a class="nav-link active"><i class="fa-solid fa-table-cells"></i></a>
+            <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true"><i class="fa-solid fa-table-cells"></i></button>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link active" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="fa-solid fa-square"></i></a>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false"><i class="fa-solid fa-square"></i></button>
                 </li>
             </ul>
         </div>
+        
         <!-- SINGLE STRIP LAYOUT -->
-        <div class="">
-            <div class="collapse" id="collapseExample">
-                <div class=" post-1 card mx-auto mt-5">
+        <div class="single-image mx-auto">
+            <div class="">
+                <div class="post-1 card mx-auto mt-5">
                     <div class="post-header d-flex justify-content-between align-items-center">
                         <div class="post-header-l d-flex justify-content-between">
                             <i class="html5 fa-brands fa-html5 fa-3x"></i>
@@ -131,7 +135,7 @@
             </div>
         </div>
         <!-- 3 X 3 LAYOUT -->
-        <div class="container">
+        <div class="container mt-5">
             <!-- ROW 1 -->
             <div class="row">
               <div class="col">
