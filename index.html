@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,6 +15,7 @@
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
+
 <body>
     <!-- BANNER -->
     <nav class="banner bg-light p-3">
@@ -81,116 +83,111 @@
     </nav>
     <!-- LAYOUT BUTTONS -->
 
+    <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+                role="tab" aria-controls="home" aria-selected="true"><i class="fa-solid fa-table-cells"></i></button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+                role="tab" aria-controls="profile" aria-selected="false"><i class="fa-solid fa-square"></i></button>
+        </li>
+    </ul>
+
     
 
-    <div class="container-lg mx-auto">
-        <div class="container d-flex justify-content-center align-items-center mt-3">
-            <!-- LAYOUT BUTTONS -->
-            <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true"><i class="fa-solid fa-table-cells"></i></button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false"><i class="fa-solid fa-square"></i></button>
-                </li>
-            </ul>
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <!-- view 1 -->
+            <div class="container text-center">
+                <div class="row mt-3">
+                    <div class="col-md-4">
+                        <img src="https://picsum.photos/200/200?random=1" class="img-thumbnail object-fit-cover"
+                            alt="...">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://picsum.photos/200/200?random=2" class="img-thumbnail object-fit-cover"
+                            alt="...">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://picsum.photos/200/200?random=3" class="img-thumbnail object-fit-cover"
+                            alt="...">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="https://picsum.photos/200/200?random=4" class="img-thumbnail object-fit-cover"
+                            alt="...">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://picsum.photos/200/200?random=5" class="img-thumbnail object-fit-cover"
+                            alt="...">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://picsum.photos/200/200?random=6" class="img-thumbnail object-fit-cover"
+                            alt="...">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="https://picsum.photos/200/200?random=" class="img-thumbnail object-fit-cover"
+                            alt="...">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://picsum.photos/200/200?random=1" class="img-thumbnail object-fit-cover"
+                            alt="...">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://picsum.photos/200/200?random=1" class="img-thumbnail object-fit-cover"
+                            alt="...">
+                    </div>
+                </div>
+            </div>
         </div>
-        
-        <!-- SINGLE STRIP LAYOUT -->
-        <div class="single-image mx-auto">
-            <div class="">
-                <div class="post-1 card mx-auto mt-5">
-                    <div class="post-header d-flex justify-content-between align-items-center">
-                        <div class="post-header-l d-flex justify-content-between">
-                            <i class="html5 fa-brands fa-html5 fa-3x"></i>
-                            <div class="name">
-                                <h6>HTML5</h6>
-                                <h6>Rigoberto</h6>
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <!-- view 2 -->
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4">
+                        <div class="card mt-3" style="width: 18rem;">
+                            <div class="card-header">
+                                <h5 class="card-title">Card title</h5>
+                            </div>
+                            <img src="https://picsum.photos/200/200?random=1" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
                             </div>
                         </div>
-                        <div class="post-header-r pe-2">
-                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        <div class="card mt-3" style="width: 18rem;">
+                            <div class="card-header">
+                                <h5 class="card-title">Card title</h5>
+                            </div>
+                            <img src="https://picsum.photos/200/200?random=1" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                            </div>
+                        </div>
+                        <div class="card mt-3" style="width: 18rem;">
+                            <div class="card-header">
+                                <h5 class="card-title">Card title</h5>
+                            </div>
+                            <img src="https://picsum.photos/200/200?random=1" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="post-img mx-auto">
-                        <img class=""
-                            src="https://media.istockphoto.com/id/672064268/photo/endless-straight-road-in-the-american-southwest-usa.jpg?s=1024x1024&w=is&k=20&c=3PmBpc8bwj_gvNbNFjEXQp13zfJf0eXi3T6lBoPTwpI="
-                            alt="">
-                    </div>
-                    <div class="post-body">
-                        <div class="post-icon d-flex justify-content-between">
-                            <div class="post-icon-l ms-1"><i class="fa-regular fa-heart"></i> <i
-                                    class="fa-regular fa-comment">
-                                    <i class="fa-regular fa-paper-plane"></i></i></div>
-                            <div class="post-icon-r"><i class="fa-regular fa-bookmark me-1"></i></div>
-                        </div>
-                        <p>Liked by <b>4GeeksAcademy, html5, Web</b> and <b>100,000 others</b> </p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi perferendis rem quisquam
-                            perspiciatis iste facilis a quae tempora autem iure facere earum tenetur totam architecto
-                            ratione vel cum dicta accusantium magni, delectus consectetur inventore quidem? Est possimus
-                            et
-                            eaque neque nam.</p>
-                    </div>
+                    <div class="col-md-4"></div>
                 </div>
             </div>
         </div>
-        <!-- 3 X 3 LAYOUT -->
-        <div class="container mt-5">
-            <!-- ROW 1 -->
-            <div class="row">
-              <div class="col">
-                <img class=""
-                            src="https://media.istockphoto.com/id/672064268/photo/endless-straight-road-in-the-american-southwest-usa.jpg?s=1024x1024&w=is&k=20&c=3PmBpc8bwj_gvNbNFjEXQp13zfJf0eXi3T6lBoPTwpI="
-                            alt="">
-              </div>
-              <div class="col">
-                <img class=""
-                            src="https://media.istockphoto.com/id/672064268/photo/endless-straight-road-in-the-american-southwest-usa.jpg?s=1024x1024&w=is&k=20&c=3PmBpc8bwj_gvNbNFjEXQp13zfJf0eXi3T6lBoPTwpI="
-                            alt="">
-              </div>
-              <div class="col">
-                <img class=""
-                            src="https://media.istockphoto.com/id/672064268/photo/endless-straight-road-in-the-american-southwest-usa.jpg?s=1024x1024&w=is&k=20&c=3PmBpc8bwj_gvNbNFjEXQp13zfJf0eXi3T6lBoPTwpI="
-                            alt="">
-              </div>
-            </div>
-            <!-- ROW 2 -->
-            <div class="row">
-                <div class="col">
-                  <img class=""
-                              src="https://media.istockphoto.com/id/672064268/photo/endless-straight-road-in-the-american-southwest-usa.jpg?s=1024x1024&w=is&k=20&c=3PmBpc8bwj_gvNbNFjEXQp13zfJf0eXi3T6lBoPTwpI="
-                              alt="">
-                </div>
-                <div class="col">
-                  <img class=""
-                              src="https://media.istockphoto.com/id/672064268/photo/endless-straight-road-in-the-american-southwest-usa.jpg?s=1024x1024&w=is&k=20&c=3PmBpc8bwj_gvNbNFjEXQp13zfJf0eXi3T6lBoPTwpI="
-                              alt="">
-                </div>
-                <div class="col">
-                  <img class=""
-                              src="https://media.istockphoto.com/id/672064268/photo/endless-straight-road-in-the-american-southwest-usa.jpg?s=1024x1024&w=is&k=20&c=3PmBpc8bwj_gvNbNFjEXQp13zfJf0eXi3T6lBoPTwpI="
-                              alt="">
-                </div>
-              </div>
-            <!-- ROW 3 -->
-            <div class="row">
-                <div class="col">
-                  <img class=""
-                              src="https://media.istockphoto.com/id/672064268/photo/endless-straight-road-in-the-american-southwest-usa.jpg?s=1024x1024&w=is&k=20&c=3PmBpc8bwj_gvNbNFjEXQp13zfJf0eXi3T6lBoPTwpI="
-                              alt="">
-                </div>
-                <div class="col">
-                  <img class=""
-                              src="https://media.istockphoto.com/id/672064268/photo/endless-straight-road-in-the-american-southwest-usa.jpg?s=1024x1024&w=is&k=20&c=3PmBpc8bwj_gvNbNFjEXQp13zfJf0eXi3T6lBoPTwpI="
-                              alt="">
-                </div>
-                <div class="col">
-                  <img class=""
-                              src="https://media.istockphoto.com/id/672064268/photo/endless-straight-road-in-the-american-southwest-usa.jpg?s=1024x1024&w=is&k=20&c=3PmBpc8bwj_gvNbNFjEXQp13zfJf0eXi3T6lBoPTwpI="
-                              alt="">
-                </div>
-              </div>
-        </div>
+
     </div>
+
 </body>
+
 </html>
